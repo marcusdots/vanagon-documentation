@@ -80,10 +80,10 @@ Oh, that is quite simple. You just need to follow a few little steps:
 
 ```mermaid
 graph TD;
-OpenFact -> Vanagon
-Vanagon -> PuppetRuntime
-PuppetRuntime -> OpenVox
-PuppetRuntime -> OpenBolt
+OpenFact --> Vanagon
+Vanagon --> PuppetRuntime
+PuppetRuntime --> OpenVox
+PuppetRuntime --> OpenBolt
 ```
 
 ## Sources and Further Reading
