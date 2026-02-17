@@ -7,6 +7,10 @@ Every build system sucks. Vanagon is a build system.
 
 Vanagon can build OpenVox agent and OpenBolt. It builds for Windows, OSX, Debian-13-x86, Debian-13-arm64, Fedora... It introduces a lot of complexity to achieve those builds.
 
+## Ligh Level Overview
+
+![Vanagon components - compiling results openvox agent and openbolt - output libraries such as openssl3 - input operating system such as windows, osx, and linux - input architectures such as x86 and arm64](vanagon_einleitung.svg)
+
 ## Motivation
 
 Let us assume you would like to build OpenVox agent. You want to support Windows, Debian-13 and Fedora-46.
@@ -78,3 +82,5 @@ Oh, that is quite simple. You just need to follow a few little steps:
 
 [1] How to user `rpath` https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
 [2] sample software bill of materials (SBOM) https://artifacts.voxpupuli.org/puppet-runtime/2026.02.16.1/agent-runtime-main-2026.02.16.1.windows-all-x64-bill-of-materials
+
+
