@@ -107,7 +107,7 @@ subgraph PuppetRuntime
   waitformirror("wait for 1hour for the mirror")
 end
 
-vorformirror-->openvoxbuildagent
+waitformirror-->openvoxbuildagent
 
 subgraph OpenVox
   openvoxbuildagent("Action build openvoxagent") -->
