@@ -94,7 +94,7 @@ subgraph OpenFact
 end
 
 subgraph Vanagon
-  bundle exec rake changelong
+  vanagonchangelog("`bundle exec rake changelong`")
 end
 
 subgraph PuppetRuntime
