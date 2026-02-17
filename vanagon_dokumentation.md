@@ -99,6 +99,8 @@ subgraph Vanagon
   vanagonchangelog("`bundle exec rake changelong`")
 end
 
+vanagonchangelog->PuppetRuntimeActionPrepareRelease
+
 subgraph PuppetRuntime
   PuppetRuntimeActionPrepareRelease("Action prepare-release") -->
   PuppetRuntimePullRequest("Pull Request") -->
