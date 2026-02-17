@@ -100,15 +100,18 @@ subgraph Vanagon
 end
 
 subgraph PuppetRuntime
-  Action-Prepare-Release
-  Pull-Request
-  Action-Release
-  Action-Build
-  wait-for-an-hour
+  PuppetRuntimeActionPrepareRelease("Action prepare-release") -->
+  PuppetRuntimePullRequest("Pull Request") -->
+  PuppetRuntimeActionRelease("Action release") -->
+  PuppetRuntimeActionBuild("Action build") -->
+  waitformirror("wait for 1hour for the mirror")
 end
 
-subgraph OpenVox
+vorformirror-->openvoxbuildagent
 
+subgraph OpenVox
+  openvoxbuildagent("Action build openvoxagent") -->
+  openvoxpreparerelease("Action prepare release")
 end
 
 ```
