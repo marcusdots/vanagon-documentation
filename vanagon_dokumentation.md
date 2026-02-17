@@ -78,6 +78,14 @@ Oh, that is quite simple. You just need to follow a few little steps:
 (10) openvox Action build openvox-agent
 (11) openvox Action Prepare Release
 
+```mermaid
+graph TD;
+OpenFact -> Vanagon
+Vanagon -> PuppetRuntime
+PuppetRuntime -> OpenVox
+PuppetRuntime -> OpenBolt
+```
+
 ## Sources and Further Reading
 
 [1] How to user `rpath` https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
