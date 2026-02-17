@@ -86,6 +86,31 @@ PuppetRuntime --> OpenVox
 PuppetRuntime --> OpenBolt
 ```
 
+```mermaid
+graph TD;
+
+subgraph OpenFact
+  release
+end
+
+subgraph Vanagon
+  bundle exec rake changelong
+end
+
+subgraph PuppetRuntime
+  Action-Prepare-Release
+  Pull-Request
+  Action-Release
+  Action-Build
+  wait-for-an-hour
+end
+
+subgraph OpenVox
+
+end
+
+```
+
 ## Sources and Further Reading
 
 [1] How to user `rpath` https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
