@@ -7,7 +7,7 @@ Every build system sucks. Vanagon is a build system.
 
 Vanagon can build OpenVox agent and OpenBolt. It builds for Windows, OSX, Debian-13-x86, Debian-13-arm64, Fedora... It introduces a lot of complexity to achieve those builds.
 
-## Ligh Level Overview
+## High Level Overview
 
 ![Vanagon components - compiling results openvox agent and openbolt - output libraries such as openssl3 - input operating system such as windows, osx, and linux - input architectures such as x86 and arm64](vanagon_einleitung.svg)
 
