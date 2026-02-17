@@ -89,8 +89,10 @@ PuppetRuntime --> OpenBolt
 ```mermaid
 graph TD;
 
+openfactrelease --> vanagonchangelog
+
 subgraph OpenFact
-  release
+  openfactrelease("release")
 end
 
 subgraph Vanagon
